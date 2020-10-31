@@ -1,0 +1,71 @@
+correct=0
+incorrect=0
+unattempted=0
+print("Welcome to my Quiz!")
+print("What does A.I. stand for?")
+print("1) Anti Intelligence")
+print("2) Artificial Intelligence")
+print("3) None of these")
+print("4) I don't know...")
+q1a=str(input("Answer: "))
+print("What does HTML stand for?")
+print("1) Hyper Texture Marking Language")
+print("2) Hyper Loop Mark-up Language")
+print("3) Hyper Text Mark-up Language")
+print("4) I don't know...")
+q2a=str(input("Answer: "))
+print("What does CSS stand for?")
+print("1) Cascading Style Sheets")
+print("2) Control Style Sheets")
+print("3) None of these")
+print("4) I don't know...")
+q3a=str(input("Answer: "))
+print("What does RGB stand for in PyGame?")
+print("1) Red Gas Blue")
+print("2) Blue Red Green")
+print("3) Red Green Blue")
+print("4) I don't know...")
+q4a=str(input("Answer: "))
+print("Good Job! Lets see your results!")
+
+if q1a=="2":
+    correct=correct+1
+elif q1a=="1":
+    incorrect=incorrect+1
+elif q1a=="3":
+    incorrect=incorrect+1
+elif q1a=="4":
+    unattempted=unattempted+1
+
+if q2a == "3":
+    correct= correct + 1
+elif q2a == "1":
+    incorrect = incorrect + 1
+elif q2a == "2":
+    incorrect = incorrect + 1
+elif q2a == "4":
+    unattempted = unattempted + 1
+
+if q3a == "3":
+    correct = correct + 1
+elif q3a == "1":
+    incorrect = incorrect + 1
+elif q3a == "2":
+    incorrect = incorrect + 1
+elif q3a == "4":
+    unattempted = unattempted + 1
+
+if q2a == "3":
+    correct= correct + 1
+elif q2a == "1":
+    incorrect = incorrect + 1
+elif q2a == "2":
+    incorrect = incorrect + 1
+elif q2a == "4":
+    unattempted = unattempted + 1
+
+print("Calculating your result......")
+print("Here are your results:")
+print("Correct Answers: ", correct)
+print("Incorrect Answers: ", incorrect)
+print("Unattempted questions count: ", unattempted)
